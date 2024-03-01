@@ -8,9 +8,9 @@ URL:https://www.youtube.com/watch?v=lfmg-EJ8gm4
 #5   00:39:09 Type conversion 💱 ✔️ 2024_03_01
 #6   00:44:48 Constants 🚫 ✔️ 2024_03_01
 #7   00:52:30 ⭐ Counter program 🔢 ✔️ 2024_03_01
+#8   01:01:46 Math object 🧮 ✔️ 2024_03_01
+#9   01:07:23 Random number generator ⁉ ✔️ 2024_03_01
 ----------------------------------------------------------
-#8   01:01:46 Math object 🧮
-#9   01:07:23 Random number generator ⁉
 #10 01:15:59 If statements 🤔
 #11 01:31:56 Checked property ✅
 #12 01:42:03 Ternary operator ❓
