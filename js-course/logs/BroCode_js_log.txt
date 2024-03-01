@@ -6,8 +6,8 @@ URL:https://www.youtube.com/watch?v=lfmg-EJ8gm4
 #3   00:25:20 Arithmetic operators ➕ ✔️ 2024_03_01
 #4   00:33:47 Accept user input 💬 ✔️ 2024_03_01
 #5   00:39:09 Type conversion 💱 ✔️ 2024_03_01
+#6   00:44:48 Constants 🚫 ✔️ 2024_03_01
 ----------------------------------------------------------
-#6   00:44:48 Constants 🚫
 #7   00:52:30 ⭐ Counter program 🔢
 #8   01:01:46 Math object 🧮
 #9   01:07:23 Random number generator ⁉
