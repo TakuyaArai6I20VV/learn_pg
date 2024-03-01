@@ -2,8 +2,8 @@ Title:JavaScript Full Course for free 🌐 (2024)
 URL:https://www.youtube.com/watch?v=lfmg-EJ8gm4
 
 #1   00:00:00 JavaScript tutorial for beginners 🌐 ✔️ 2024_02_25
+#2   00:12:32 Variables 📦 ✔️ 2024_03_01
 ----------------------------------------------------------
-#2   00:12:32 Variables 📦
 #3   00:25:20 Arithmetic operators ➕
 #4   00:33:47 Accept user input 💬
 #5   00:39:09 Type conversion 💱
