@@ -10,8 +10,8 @@ URL:https://www.youtube.com/watch?v=lfmg-EJ8gm4
 #7   00:52:30 ⭐ Counter program 🔢 ✔️ 2024_03_01
 #8   01:01:46 Math object 🧮 ✔️ 2024_03_01
 #9   01:07:23 Random number generator ⁉ ✔️ 2024_03_01
+#10 01:15:59 If statements 🤔 ✔️ 2024_03_04
 ----------------------------------------------------------
-#10 01:15:59 If statements 🤔
 #11 01:31:56 Checked property ✅
 #12 01:42:03 Ternary operator ❓
 #13 01:48:49 Switches 💡
