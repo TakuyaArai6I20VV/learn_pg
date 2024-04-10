@@ -70,6 +70,24 @@ function updateProgress(e) {
   const { duration, currentTime } = e.srcElement;
   const progressPercent = (currentTime / duration) * 100;
   progress.style.width = `${progressPercent}%`;
+
+  // display time
+  const durationMinutes = Math.floor(duration / 60);
+  let durationSeconds = Math.floor(duration % 60);
+  if (durationSeconds < 10) {
+    durationSeconds = `0${durationSeconds}`;
+  }
+
+  if (durTime.textContent !== `${durationMinutes}:${durationSeconds}`) {
+    durTime.textContent = `${durationMinutes}:${durationSeconds}`;
+  }
+
+  const currentMinutes = Math.floor(currentTime / 60);
+  let currentSeconds = Math.floor(currentTime % 60);
+  if (currentSeconds < 10) {
+    currentSeconds = `0${currentSeconds}`;
+  }
+  currTime.textContent = `${currentMinutes}:${currentSeconds}`;
 }
 
 function setProgress(e) {
