@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
+import books from './books';
+import EventBasic from './EventBasic';
+import ForList from './ForList';
+import StateBasic from './StateBasic';
+import MyHello from './MyHello';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <MyHello lastName="鈴木" firstName="一郎" age={1} />
+    <EventBasic type="time" />
+    <EventBasic type="date" />
+    <br />
+    <StateBasic init={0}/>
+    <ForList src={books}/>
   </React.StrictMode>
 );
 
