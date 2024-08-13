@@ -1,13 +1,17 @@
 class Person {
-  name: string;
-  age: number;
+  public name: string;
+  private age: number;
 
   constructor(initName: string, initAge: number) {
     this.name = initName;
     this.age = initAge;
   }
 
-  greeting(this: { name: string, age: number }) {
+  incrementAge() {
+    this.age++;
+  }
+
+  greeting(this: Person) {
     console.log(`Hello, ${this.name}!\nYour age is ${this.age}`);
   }
 }
@@ -15,5 +19,4 @@ class Person {
 const Mike = new Person('Mike', 22);
 console.log(Mike);
 console.log(Mike.name);
-console.log(Mike.age);
 Mike.greeting();
