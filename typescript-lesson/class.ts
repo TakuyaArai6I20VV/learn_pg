@@ -1,11 +1,16 @@
 class Person {
+  readonly id: number;
   public name: string;
   private age: number;
 
-  constructor(initName: string, initAge: number) {
+  constructor(initId: number, initName: string, initAge: number) {
+    this.id = initId;
     this.name = initName;
     this.age = initAge;
   }
+
+  // 初期化の省略
+  // constructor(public name: string, private age: number) {}
 
   incrementAge() {
     this.age++;
@@ -16,7 +21,8 @@ class Person {
   }
 }
 
-const Mike = new Person('Mike', 22);
+const Mike = new Person(1, 'Mike', 22);
 console.log(Mike);
 console.log(Mike.name);
+console.log(Mike.id);
 Mike.greeting();
