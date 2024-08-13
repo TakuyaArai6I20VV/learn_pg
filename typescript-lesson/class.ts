@@ -1,7 +1,13 @@
 class Person {
+  static species = 'Homo sapiens';
+  static isAdult(age: number) {
+    if (age > 17) return true;
+    else return false;
+  }
+
   readonly id: number;
   public name: string;
-  protected age: number;
+  readonly age: number;
 
   constructor(initId: number, initName: string, initAge: number) {
     this.id = initId;
@@ -12,9 +18,9 @@ class Person {
   // 初期化の省略
   // constructor(public name: string, private age: number) {}
 
-  incrementAge() {
-    this.age++;
-  }
+  // incrementAge() {
+  //   this.age++;
+  // }
 
   greeting(this: Person) {
     console.log(`Hello, ${this.name}!\nYour age is ${this.age}`);
@@ -57,3 +63,5 @@ teacher.greeting();
 teacher.subject = 'math';
 console.log(teacher)
 console.log(teacher.subject);
+
+console.log(Person.isAdult(2));
