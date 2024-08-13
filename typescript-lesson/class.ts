@@ -21,8 +21,22 @@ class Person {
   }
 }
 
+class Teacher extends Person {
+  constructor(id: number, name: string, age: number, public subject: string) {
+    super(id, name, age);
+  }
+
+  greeting(this: Teacher) {
+    console.log(`Hello, ${this.name}. You teach ${this.subject}.`);
+  }
+}
+
 const Mike = new Person(1, 'Mike', 22);
 console.log(Mike);
 console.log(Mike.name);
 console.log(Mike.id);
 Mike.greeting();
+
+const teacher = new Teacher(2, 'Tom', 30, 'science');
+console.log(teacher)
+teacher.greeting();
