@@ -1,7 +1,7 @@
 class Person {
   readonly id: number;
   public name: string;
-  private age: number;
+  protected age: number;
 
   constructor(initId: number, initName: string, initAge: number) {
     this.id = initId;
@@ -22,6 +22,20 @@ class Person {
 }
 
 class Teacher extends Person {
+  get valSubject() {
+    if (!this.subject) {
+      throw new Error('Subject is not set');
+    }
+    return this.subject;
+  }
+
+  set valSubject(value) {
+    if (!value) {
+      throw new Error('Subject is required');
+    }
+    this.subject = value;
+  }
+
   constructor(id: number, name: string, age: number, public subject: string) {
     super(id, name, age);
   }
@@ -40,3 +54,6 @@ Mike.greeting();
 const teacher = new Teacher(2, 'Tom', 30, 'science');
 console.log(teacher)
 teacher.greeting();
+teacher.subject = 'math';
+console.log(teacher)
+console.log(teacher.subject);
